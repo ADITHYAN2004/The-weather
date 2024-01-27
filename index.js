@@ -42,11 +42,11 @@ console.log("Setting image src to:", weather.getAttribute("src"));
 
 
 search.addEventListener('click',()=>{ 
-  
+  document.querySelector(".weather").style.display="flex"
+  document.querySelector(".humi-wind").style.display="flex"
     checkWeather(serchcity.value);
    
-    document.querySelector(".weather").style.display="flex"
-    document.querySelector(".humi-wind").style.display="flex"
+   
   
   
 })
