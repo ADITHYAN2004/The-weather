@@ -10,7 +10,7 @@ const serchcity= document.querySelector(".search-field");
 
 
 async function checkWeather(city) {
-    console.log(city)
+  
     
   const response = await fetch(apiUrl + city +`&appid=${key}`);
   const data = await response.json();
@@ -20,7 +20,8 @@ async function checkWeather(city) {
       document.querySelector(".error").style.display="block"
     }
     else{
-  console.log(data)
+      document.querySelector(".error").style.display="none"
+ 
   tem.innerHTML=Math.round((data.main).temp)+"°C";
   cityname.innerHTML=data.name;
   humi.innerHTML=(data.main).humidity+"%";
