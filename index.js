@@ -14,7 +14,7 @@ async function checkWeather(city) {
     
   const response = await fetch(apiUrl + city +`&appid=${key}`);
   const data = await response.json();
-  
+
   console.log(data)
   tem.innerHTML=Math.round((data.main).temp)+"°C";
   cityname.innerHTML=data.name;
@@ -44,7 +44,7 @@ console.log("Setting image src to:", weather.getAttribute("src"));
 search.addEventListener('click',()=>{ 
   
     checkWeather(serchcity.value);
-    
+   
     document.querySelector(".weather").style.display="flex"
     document.querySelector(".humi-wind").style.display="flex"
   
