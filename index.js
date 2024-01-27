@@ -14,7 +14,9 @@ async function checkWeather(city) {
     
   const response = await fetch(apiUrl + city +`&appid=${key}`);
   const data = await response.json();
-
+    if(response.status==404){
+      document.querySelector(".error").style.display="block"
+    }
   console.log(data)
   tem.innerHTML=Math.round((data.main).temp)+"°C";
   cityname.innerHTML=data.name;
@@ -35,15 +37,13 @@ async function checkWeather(city) {
     case "Snow":weather.src="./images/snow.png" 
     break;
  }
-  console.log("Weather condition:", data.weather[0].main);
-console.log("Setting image src to:", weather.getAttribute("src"));
-
+ document.querySelector(".weather").style.display="flex"
+  document.querySelector(".humi-wind").style.display="flex"
 }
 
 
 search.addEventListener('click',()=>{ 
-  document.querySelector(".weather").style.display="flex"
-  document.querySelector(".humi-wind").style.display="flex"
+ 
     checkWeather(serchcity.value);
    
    
