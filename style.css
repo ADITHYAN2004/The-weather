@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    margin: 0;
+     color: rgb(14, 8, 46);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    background-color: #3b3743;
+}
+header{
+  font-size: 2rem;
+  font-weight: 600;  
+   padding-top: 30px;
+  padding-left: 50px;
+  color: rgb(227, 226, 165);
+ 
+  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height:100vh ;
+  
+ 
+}
+.container-content{
+  height: auto;
+  width: auto;
+  border-radius: 35px;
+  border: 0;
+  margin-top: -60px;
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+ box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.content-search{
+    display: flex;
+    margin: 20px 30px ;
+    
+}
+.search-field{
+     background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 250px;
+    border: 0;
+    border-radius: 25px;
+   
+}
+.content-search input{
+    padding:15px;
+    font-size: 1rem;
+    
+}
+.btn{
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.weather{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-img{
+    width: 150px;
+    height: 150px;
+    
+}
+.temp{
+   font-weight: 600;
+   margin-top: 10px;
+   font-size: 2rem;
+}
+.place-name{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+
+}
+
+.humi-wind{
+   
+        display: flex;
+        
+        height: auto;
+        align-items: center;
+        margin-left: 20px;
+       
+}
+.humi{
+  display: flex;
+ align-items: center;
+ margin: 20px;
+ 
+ 
+}
+.wind{
+    display: flex;
+    
+    align-items: center;
+    
+}
+.humi-img{
+    
+    width: 50px;
+    height: 50px;
+    
+}
+.wind-img{
+    width: 50px;
+    height: 50px;
+}
+.wind-text{
+    font-size: 0.8rem;
+    margin-left: 7px;
+    margin-right: 20px;
+
+}
+.humi-text{
+    font-size: 0.8rem;
+    margin-left: 7px;
+  }
+   .humi-text-change{
+    font-size:1.3rem;
+   }
+   .wind-text-change{
+    font-size: 1.3rem;
+   }
+   .weather{
+    display: none;
+   }
+   .humi-wind{
+    display: none;
+   }
