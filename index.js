@@ -15,8 +15,11 @@ async function checkWeather(city) {
   const response = await fetch(apiUrl + city +`&appid=${key}`);
   const data = await response.json();
     if(response.status==404){
+      document.querySelector(".weather").style.display="none"
+      document.querySelector(".humi-wind").style.display="none"
       document.querySelector(".error").style.display="block"
     }
+    else{
   console.log(data)
   tem.innerHTML=Math.round((data.main).temp)+"°C";
   cityname.innerHTML=data.name;
@@ -39,6 +42,7 @@ async function checkWeather(city) {
  }
  document.querySelector(".weather").style.display="flex"
   document.querySelector(".humi-wind").style.display="flex"
+}
 }
 
 
