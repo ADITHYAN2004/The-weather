@@ -54,6 +54,7 @@ header{
     border-radius: 25px;
    
 }
+
 .content-search input{
     padding:15px;
     font-size: 1rem;
@@ -145,3 +146,14 @@ header{
    .humi-wind{
     display: none;
    }
+.error{
+    text-align: center;
+    margin: 20px;
+    color: rgb(42, 44, 4);
+    display: none;
+}   
+.error .catch{
+    text-align: center;
+    margin: 20px;
+    color: rgb(42, 44, 4);
+}
